@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sporty Zimowe</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef4ff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(to right, #8fb3ec, #a7d9e7);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .sport {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sport img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .sport h2 {
+            margin: 15px;
+            font-size: 24px;
+        }
+
+        .sport p {
+            margin: 0 15px 20px 15px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        footer {
+            background-color: #8fb3ec;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sporty Zimowe</h1>
+    <p>Najpopularniejsze dyscypliny uprawiane zimą</p>
+</header>
+
+<main>
+
+    <div class="sport">
+        <img src="https://azcdn.doz.pl/image/d/article/c3353dca-scalecrop-840x350.jpg" alt="Narciarstwo alpejskie">
+        <h2>Narciarstwo</h2>
+        <p>Narciarstwo alpejskie polega na zjazdach po specjalnie przygotowanych trasach narciarskich.</p>
+    </div>
+
+    <div class="sport">
+        <img src="https://a.allegroimg.com/original/12a87f/7324afe44514ae47660f9d7bba4f" alt="Snowboard">
+        <h2>Snowboard</h2>
+        <p>Snowboard to sport zimowy polegający na zjeżdżaniu po śniegu na jednej desce.</p>
+    </div>
+
+    <div class="sport">
+        <img src="https://osir.gostyn.pl/photos/p_big_37703_2.jpg" alt="Łyżwiarstwo">
+        <h2>Łyżwiarstwo</h2>
+        <p>Łyżwiarstwo to sport uprawiany na lodzie, zarówno rekreacyjnie, jak i zawodowo.</p>
+    </div>
+
+    <div class="sport">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS64bgxTdr30su5hXHoef3AjsedjKgns0xrew&s" alt="Hokej na lodzie">
+        <h2>Hokej</h2>
+        <p>Hokej to szybki sport zespołowy, w którym zawodnicy rywalizują o krążek.</p>
+    </div>
+
+</main>
+
+<footer>
+    <strong>Karol Krupa</strong>
+</footer>
+
+</body>
+</html>
